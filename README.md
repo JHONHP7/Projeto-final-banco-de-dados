@@ -12,9 +12,10 @@ Este repositório contém os artefatos relacionados ao projeto de banco de dados
 3. **Script de Criação de Tabelas**
 4. **Script de Functions, Procedures e Views** 
 5. **Scripts para Povoar as Tabelas** 
-6. **Script com Consultas e Utilização de Views, Functions e Procedures** 
-7. **Dump do Schema** 
-8. **Link para o Repositório no GitHub** 
+6. **Script com Consultas e Utilização de Views, Functions e Procedures**
+7. **Script de criação de Índices**
+8. **Dump do Schema** 
+9. **Link para o Repositório no GitHub** 
 
 ## Estrutura do Banco de Dados
 
