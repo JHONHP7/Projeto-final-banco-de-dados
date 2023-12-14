@@ -3,7 +3,7 @@
 
 ## Introdução
 
-Este repositório contém os artefatos relacionados ao projeto de banco de dados desenvolvido para a disciplina de Projeto de Banco de Dados para Sistema de Informação. O tema do projeto é uma adaptação do conceito de Pokémon e batalhas, e os principais elementos do projeto incluem o modelo conceitual, modelo lógico, scripts de criação de tabelas, funções, procedures e views, scripts para povoar as tabelas, consultas SQL, entre outros.
+Este repositório contém os arquivos relacionados ao projeto de banco de dados desenvolvido para a disciplina de Projeto de Banco de Dados para Sistema de Informação. O tema do projeto é uma adaptação do conceito de Pokémon e batalhas, e os principais elementos do projeto incluem o modelo conceitual, modelo lógico, scripts de criação de tabelas, funções, procedures e views, scripts para povoar as tabelas, consultas SQL, entre outros.
 
 ## Estrutura do Repositório
 
