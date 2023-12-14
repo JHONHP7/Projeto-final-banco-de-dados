@@ -1,4 +1,4 @@
-# Projeto-final-banco-de-dados
+# Projeto final banco de dados
 # Projeto de Banco de Dados para Sistema de Informação
 
 ## Introdução
