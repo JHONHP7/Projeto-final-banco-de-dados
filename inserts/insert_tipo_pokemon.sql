@@ -1,0 +1,20 @@
+INSERT INTO projeto_final.tipo_pokemon(descricao, nome_tipo)
+VALUES
+('Fraco para Lutador. Imune a Fantasma', 'Normal'),
+('Fraco para Voador, Psíquico e Fada. Resistente Pedra, Inseto e Sombroso', 'Lutador'),
+('Fraco para Pedra, Elétrico e Gelo. Resistente a Lutador, Inseto e Grama. Imune a Terrestra.', 'Voador'),
+('Fraco para Terrestre e Psíquico. Resistente a Lutador, Veneno, Inseto, Grama e Veneno', 'Venenoso'),
+('Fraco para Água, Grama e Gelo. Resistente a Venenoso e Pedra. Imune a Elétrico', 'Terrestre'),
+('Fraco para Lutador, Terrestre, Aço, Água e Grama. Resistente a Normal, Voador, Venenoso e Fogo', 'Pedra'),
+('Fraco para Voador, Pedra e Fogo. Resistente a Lutador, Terrestre e Grama.', 'Inseto'),
+('Fraco para Fantasman e Sombroso. Resistente a Venenoso. Imune a Lutador e Normal.','Fantasma'),
+('Fraco para Lutador, Terrestre e Fogo. Resistente a Normal, Voador, Pedra, Inseto, Aço, Grama, Psíquico, Gelo, Dragão e Fada.', 'Aço'),
+('Fraco para Terrestre, Pedra e Água. Resistente a Inseto, Aço, Fogo, Grama, Gelo e Fada.', 'Fogo'),
+('Fraco para Grama e Elétrico. Resistente a Aço, Fogo, Água e Gelo.', 'Água'),
+('Fraco para Fogo, Voador, Venenoso e Gelo. Resistente a Grama, Água, Terrestre e Elétrico.','Grama'),
+('Fraco para Terrestre. Resistente a Elétrico, Aço e Voador.', 'Elétrico'),
+('Fraco para Inseto, Fantasma e Sombroso. Resistente a Psíquico e Lutador.', 'Psíquico'),
+('Fraco para Lutador, Fogo, Pedra e Aço. Resistente a Gelo.', 'Gelo'),
+('Fraco para Gelo, Dragão e Fada. Resistente a Fogo, Água, Grama e Elétrico.', 'Dragão'),
+('Fraco para Lutador, Inseto e Fada. Resistente a Fantasma e Sombio. Imune a Psíquico.', 'Sombroso'),
+('Fraco para Aço e Venenoso. Resistente para Lutador e Sombroso. Imune a Dragão.', 'Fada');
