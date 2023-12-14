@@ -7,14 +7,14 @@ Este repositório contém os artefatos relacionados ao projeto de banco de dados
 
 ## Estrutura do Repositório
 
-1. **Modelo Conceitual:** [Link para o PDF](link_modelo_conceitual.pdf)
-2. **Modelo Lógico:** [Link para o PDF](link_modelo_logico.pdf)
-3. **Script de Criação de Tabelas:** [script_criacao_tabelas.sql](script_criacao_tabelas.sql)
-4. **Script de Functions, Procedures e Views:** [script_functions_procedures_views.sql](script_functions_procedures_views.sql)
-5. **Scripts para Povoar as Tabelas:** [script_povoamento_tabelas.sql](script_povoamento_tabelas.sql)
-6. **Script com Consultas e Utilização de Views, Functions e Procedures:** [script_consultas_utilizacao.sql](script_consultas_utilizacao.sql)
-7. **Dump do Schema:** [dump_schema.sql](dump_schema.sql)
-8. **Link para o Repositório no GitHub:** [GitHub Repository](https://github.com/seuusuario/nome-do-repositorio)
+1. **Modelo Conceitual** 
+2. **Modelo Lógico** 
+3. **Script de Criação de Tabelas**
+4. **Script de Functions, Procedures e Views** 
+5. **Scripts para Povoar as Tabelas** 
+6. **Script com Consultas e Utilização de Views, Functions e Procedures** 
+7. **Dump do Schema** 
+8. **Link para o Repositório no GitHub** 
 
 ## Estrutura do Banco de Dados
 
