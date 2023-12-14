@@ -83,9 +83,9 @@ FROM
     JOIN PROJETO_FINAL.TREINADOR T2 ON T.TREINADOR_ID = T2.TREINADOR_ID
     JOIN PROJETO_FINAL.REGIAO R ON T2.REGIAO_ID = R.REGIAO_ID
 WHERE
-    B.COR = 'Laranja'
+    B.COR = 'Preto'
     AND R.NOME = 'Kanto'
-    AND T.IDADE BETWEEN 20
+    AND T.IDADE BETWEEN 10
     AND 30;
 
 -- Listar todos os treinadores que possuem um item de um tipo específico em suas bolsas:
@@ -145,7 +145,7 @@ FROM
     JOIN PROJETO_FINAL.POKEMON_TIPO_POKEMON PTP ON P.POKEMON_ID = PTP.POKEMON_ID
     JOIN PROJETO_FINAL.TIPO_POKEMON TP ON PTP.TIPO_POKEMON_ID = TP.TIPO_POKEMON_ID
 WHERE
-    TP.NOME_TIPO = 'Normal'
+    TP.NOME_TIPO = 'Fogo'
     AND P.LVL > 90;
 
 -- Listar todos os Pokémon que compartilham um movimento específico e são do mesmo tipo:
@@ -267,7 +267,7 @@ GROUP BY
     P.NOME;
 
 -- Chamando procedure para atualizar idade de treinador
-CALL atualizar_idade_treinador(7, 19);
+CALL atualizar_idade_treinador(7, 10);
 
 -- Chamado para obter informações do treinador pelo id
 CALL obter_info_treinador(4);
