@@ -15,3 +15,11 @@ VALUES
 (13, 'Cut','The foe is cut with a scythe or claw.','Physical',50,95),
 (14, 'Gust','Whips up a strong gust of wind.','Special', 40, 100),
 (15,'Wing Attack','Strikes the target with wings.','Physical',60,100);
+INSERT INTO projeto_final.move(move_id, nome, categoria)
+VALUES
+(16,'Whirlwind', 'Status'),
+(17,'Fly', 'Physical'),
+(18,'Bind', 'Physical'),
+(19,'Slam', 'Physical'),
+(20,'Vine Whip', 'Physical'),
+(21,'Stomp', 'Physical');
