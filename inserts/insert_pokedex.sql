@@ -230,3 +230,25 @@ flare up.'),
 ('It was created by a scientist after years of horrific gene splicing and DNA engineering experiments.'),
 
 ('So rare that it is still said to be a mirage by many experts. Only a few people have seen it worldwide.');
+INSERT INTO projeto_final.pokedex(pokedex_id)
+VALUES
+(152),
+(153),
+(154),
+(155),
+(156),
+(157),
+(158),
+(159),
+(160),
+(161),
+(162),
+(163),
+(164),
+(165),
+(166),
+(167),
+(168),
+(169),
+(170),
+(171);
