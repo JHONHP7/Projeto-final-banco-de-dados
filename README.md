@@ -14,7 +14,7 @@ Este repositório contém os arquivos relacionados ao projeto de banco de dados 
 5. **Scripts para Povoar as Tabelas** 
 6. **Script com Consultas e Utilização de Views, Functions e Procedures**
 7. **Script de criação de Índices**
-8. **Dump do Schema** 
+8. **Dump do Schema:** [Link para o Google Drive](https://drive.google.com/drive/folders/1HbaKCmYfo6YhbNQX__-XPvxNvqmCPgbI?usp=sharing) 
 9. **Link para o Repositório no GitHub** 
 
 ## Estrutura do Banco de Dados
