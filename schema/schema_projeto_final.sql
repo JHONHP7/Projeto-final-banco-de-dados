@@ -5,7 +5,7 @@
 -- Dumped from database version 16rc1
 -- Dumped by pg_dump version 16rc1
 
--- Started on 2023-12-14 22:01:35
+-- Started on 2023-12-14 20:56:36
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -19,21 +19,21 @@ SET client_min_messages = warning;
 SET row_security = off;
 
 --
--- TOC entry 11 (class 2615 OID 31020)
--- Name: projeto_final; Type: SCHEMA; Schema: -; Owner: jhonatanuff
+-- TOC entry 11 (class 2615 OID 31272)
+-- Name: projeto_final; Type: SCHEMA; Schema: -; Owner: postgres
 --
 
 CREATE SCHEMA projeto_final;
 
 
-ALTER SCHEMA projeto_final OWNER TO jhonatanuff;
+ALTER SCHEMA projeto_final OWNER TO postgres;
 
 SET default_tablespace = '';
 
 SET default_table_access_method = heap;
 
 --
--- TOC entry 282 (class 1259 OID 31117)
+-- TOC entry 256 (class 1259 OID 31273)
 -- Name: batalha; Type: TABLE; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -48,7 +48,7 @@ CREATE TABLE projeto_final.batalha (
 ALTER TABLE projeto_final.batalha OWNER TO jhonatanuff;
 
 --
--- TOC entry 281 (class 1259 OID 31116)
+-- TOC entry 257 (class 1259 OID 31276)
 -- Name: batalha_batalha_id_seq; Type: SEQUENCE; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -64,8 +64,8 @@ CREATE SEQUENCE projeto_final.batalha_batalha_id_seq
 ALTER SEQUENCE projeto_final.batalha_batalha_id_seq OWNER TO jhonatanuff;
 
 --
--- TOC entry 6048 (class 0 OID 0)
--- Dependencies: 281
+-- TOC entry 6050 (class 0 OID 0)
+-- Dependencies: 257
 -- Name: batalha_batalha_id_seq; Type: SEQUENCE OWNED BY; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -73,7 +73,7 @@ ALTER SEQUENCE projeto_final.batalha_batalha_id_seq OWNED BY projeto_final.batal
 
 
 --
--- TOC entry 269 (class 1259 OID 31067)
+-- TOC entry 258 (class 1259 OID 31277)
 -- Name: bolsa; Type: TABLE; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -87,7 +87,7 @@ CREATE TABLE projeto_final.bolsa (
 ALTER TABLE projeto_final.bolsa OWNER TO jhonatanuff;
 
 --
--- TOC entry 268 (class 1259 OID 31066)
+-- TOC entry 259 (class 1259 OID 31280)
 -- Name: bolsa_bolsa_id_seq; Type: SEQUENCE; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -103,8 +103,8 @@ CREATE SEQUENCE projeto_final.bolsa_bolsa_id_seq
 ALTER SEQUENCE projeto_final.bolsa_bolsa_id_seq OWNER TO jhonatanuff;
 
 --
--- TOC entry 6049 (class 0 OID 0)
--- Dependencies: 268
+-- TOC entry 6051 (class 0 OID 0)
+-- Dependencies: 259
 -- Name: bolsa_bolsa_id_seq; Type: SEQUENCE OWNED BY; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -112,7 +112,7 @@ ALTER SEQUENCE projeto_final.bolsa_bolsa_id_seq OWNED BY projeto_final.bolsa.bol
 
 
 --
--- TOC entry 280 (class 1259 OID 31110)
+-- TOC entry 260 (class 1259 OID 31281)
 -- Name: ginasio; Type: TABLE; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -126,7 +126,7 @@ CREATE TABLE projeto_final.ginasio (
 ALTER TABLE projeto_final.ginasio OWNER TO jhonatanuff;
 
 --
--- TOC entry 279 (class 1259 OID 31109)
+-- TOC entry 261 (class 1259 OID 31284)
 -- Name: ginasio_ginasio_id_seq; Type: SEQUENCE; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -142,8 +142,8 @@ CREATE SEQUENCE projeto_final.ginasio_ginasio_id_seq
 ALTER SEQUENCE projeto_final.ginasio_ginasio_id_seq OWNER TO jhonatanuff;
 
 --
--- TOC entry 6050 (class 0 OID 0)
--- Dependencies: 279
+-- TOC entry 6052 (class 0 OID 0)
+-- Dependencies: 261
 -- Name: ginasio_ginasio_id_seq; Type: SEQUENCE OWNED BY; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -151,7 +151,7 @@ ALTER SEQUENCE projeto_final.ginasio_ginasio_id_seq OWNED BY projeto_final.ginas
 
 
 --
--- TOC entry 271 (class 1259 OID 31074)
+-- TOC entry 262 (class 1259 OID 31285)
 -- Name: item; Type: TABLE; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -168,7 +168,7 @@ CREATE TABLE projeto_final.item (
 ALTER TABLE projeto_final.item OWNER TO jhonatanuff;
 
 --
--- TOC entry 270 (class 1259 OID 31073)
+-- TOC entry 263 (class 1259 OID 31288)
 -- Name: item_item_id_seq; Type: SEQUENCE; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -184,8 +184,8 @@ CREATE SEQUENCE projeto_final.item_item_id_seq
 ALTER SEQUENCE projeto_final.item_item_id_seq OWNER TO jhonatanuff;
 
 --
--- TOC entry 6051 (class 0 OID 0)
--- Dependencies: 270
+-- TOC entry 6053 (class 0 OID 0)
+-- Dependencies: 263
 -- Name: item_item_id_seq; Type: SEQUENCE OWNED BY; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -193,7 +193,7 @@ ALTER SEQUENCE projeto_final.item_item_id_seq OWNED BY projeto_final.item.item_i
 
 
 --
--- TOC entry 277 (class 1259 OID 31098)
+-- TOC entry 264 (class 1259 OID 31289)
 -- Name: move; Type: TABLE; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -210,7 +210,7 @@ CREATE TABLE projeto_final.move (
 ALTER TABLE projeto_final.move OWNER TO jhonatanuff;
 
 --
--- TOC entry 276 (class 1259 OID 31097)
+-- TOC entry 265 (class 1259 OID 31292)
 -- Name: move_move_id_seq; Type: SEQUENCE; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -226,8 +226,8 @@ CREATE SEQUENCE projeto_final.move_move_id_seq
 ALTER SEQUENCE projeto_final.move_move_id_seq OWNER TO jhonatanuff;
 
 --
--- TOC entry 6052 (class 0 OID 0)
--- Dependencies: 276
+-- TOC entry 6054 (class 0 OID 0)
+-- Dependencies: 265
 -- Name: move_move_id_seq; Type: SEQUENCE OWNED BY; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -235,7 +235,7 @@ ALTER SEQUENCE projeto_final.move_move_id_seq OWNED BY projeto_final.move.move_i
 
 
 --
--- TOC entry 260 (class 1259 OID 31034)
+-- TOC entry 266 (class 1259 OID 31293)
 -- Name: pokedex; Type: TABLE; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -248,7 +248,7 @@ CREATE TABLE projeto_final.pokedex (
 ALTER TABLE projeto_final.pokedex OWNER TO jhonatanuff;
 
 --
--- TOC entry 259 (class 1259 OID 31033)
+-- TOC entry 267 (class 1259 OID 31296)
 -- Name: pokedex_pokedex_id_seq; Type: SEQUENCE; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -264,8 +264,8 @@ CREATE SEQUENCE projeto_final.pokedex_pokedex_id_seq
 ALTER SEQUENCE projeto_final.pokedex_pokedex_id_seq OWNER TO jhonatanuff;
 
 --
--- TOC entry 6053 (class 0 OID 0)
--- Dependencies: 259
+-- TOC entry 6055 (class 0 OID 0)
+-- Dependencies: 267
 -- Name: pokedex_pokedex_id_seq; Type: SEQUENCE OWNED BY; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -273,7 +273,7 @@ ALTER SEQUENCE projeto_final.pokedex_pokedex_id_seq OWNED BY projeto_final.poked
 
 
 --
--- TOC entry 262 (class 1259 OID 31041)
+-- TOC entry 268 (class 1259 OID 31297)
 -- Name: pokemon; Type: TABLE; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -294,7 +294,7 @@ CREATE TABLE projeto_final.pokemon (
 ALTER TABLE projeto_final.pokemon OWNER TO jhonatanuff;
 
 --
--- TOC entry 278 (class 1259 OID 31104)
+-- TOC entry 269 (class 1259 OID 31300)
 -- Name: pokemon_move; Type: TABLE; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -307,7 +307,7 @@ CREATE TABLE projeto_final.pokemon_move (
 ALTER TABLE projeto_final.pokemon_move OWNER TO jhonatanuff;
 
 --
--- TOC entry 261 (class 1259 OID 31040)
+-- TOC entry 270 (class 1259 OID 31303)
 -- Name: pokemon_pokemon_id_seq; Type: SEQUENCE; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -323,8 +323,8 @@ CREATE SEQUENCE projeto_final.pokemon_pokemon_id_seq
 ALTER SEQUENCE projeto_final.pokemon_pokemon_id_seq OWNER TO jhonatanuff;
 
 --
--- TOC entry 6054 (class 0 OID 0)
--- Dependencies: 261
+-- TOC entry 6056 (class 0 OID 0)
+-- Dependencies: 270
 -- Name: pokemon_pokemon_id_seq; Type: SEQUENCE OWNED BY; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -332,7 +332,7 @@ ALTER SEQUENCE projeto_final.pokemon_pokemon_id_seq OWNED BY projeto_final.pokem
 
 
 --
--- TOC entry 256 (class 1259 OID 31021)
+-- TOC entry 271 (class 1259 OID 31304)
 -- Name: pokemon_time; Type: TABLE; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -345,7 +345,7 @@ CREATE TABLE projeto_final.pokemon_time (
 ALTER TABLE projeto_final.pokemon_time OWNER TO jhonatanuff;
 
 --
--- TOC entry 275 (class 1259 OID 31092)
+-- TOC entry 272 (class 1259 OID 31307)
 -- Name: pokemon_tipo_pokemon; Type: TABLE; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -358,7 +358,7 @@ CREATE TABLE projeto_final.pokemon_tipo_pokemon (
 ALTER TABLE projeto_final.pokemon_tipo_pokemon OWNER TO jhonatanuff;
 
 --
--- TOC entry 265 (class 1259 OID 31053)
+-- TOC entry 273 (class 1259 OID 31310)
 -- Name: regiao; Type: TABLE; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -372,7 +372,7 @@ CREATE TABLE projeto_final.regiao (
 ALTER TABLE projeto_final.regiao OWNER TO jhonatanuff;
 
 --
--- TOC entry 264 (class 1259 OID 31052)
+-- TOC entry 274 (class 1259 OID 31313)
 -- Name: regiao_regiao_id_seq; Type: SEQUENCE; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -388,8 +388,8 @@ CREATE SEQUENCE projeto_final.regiao_regiao_id_seq
 ALTER SEQUENCE projeto_final.regiao_regiao_id_seq OWNER TO jhonatanuff;
 
 --
--- TOC entry 6055 (class 0 OID 0)
--- Dependencies: 264
+-- TOC entry 6057 (class 0 OID 0)
+-- Dependencies: 274
 -- Name: regiao_regiao_id_seq; Type: SEQUENCE OWNED BY; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -397,7 +397,7 @@ ALTER SEQUENCE projeto_final.regiao_regiao_id_seq OWNED BY projeto_final.regiao.
 
 
 --
--- TOC entry 258 (class 1259 OID 31027)
+-- TOC entry 275 (class 1259 OID 31314)
 -- Name: time; Type: TABLE; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -409,7 +409,7 @@ CREATE TABLE projeto_final."time" (
 ALTER TABLE projeto_final."time" OWNER TO jhonatanuff;
 
 --
--- TOC entry 257 (class 1259 OID 31026)
+-- TOC entry 276 (class 1259 OID 31317)
 -- Name: time_time_id_seq; Type: SEQUENCE; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -425,8 +425,8 @@ CREATE SEQUENCE projeto_final.time_time_id_seq
 ALTER SEQUENCE projeto_final.time_time_id_seq OWNER TO jhonatanuff;
 
 --
--- TOC entry 6056 (class 0 OID 0)
--- Dependencies: 257
+-- TOC entry 6058 (class 0 OID 0)
+-- Dependencies: 276
 -- Name: time_time_id_seq; Type: SEQUENCE OWNED BY; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -434,7 +434,7 @@ ALTER SEQUENCE projeto_final.time_time_id_seq OWNED BY projeto_final."time".time
 
 
 --
--- TOC entry 274 (class 1259 OID 31086)
+-- TOC entry 277 (class 1259 OID 31318)
 -- Name: tipo_pokemon; Type: TABLE; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -448,7 +448,7 @@ CREATE TABLE projeto_final.tipo_pokemon (
 ALTER TABLE projeto_final.tipo_pokemon OWNER TO jhonatanuff;
 
 --
--- TOC entry 273 (class 1259 OID 31085)
+-- TOC entry 278 (class 1259 OID 31321)
 -- Name: tipo_pokemon_tipo_pokemon_id_seq; Type: SEQUENCE; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -464,8 +464,8 @@ CREATE SEQUENCE projeto_final.tipo_pokemon_tipo_pokemon_id_seq
 ALTER SEQUENCE projeto_final.tipo_pokemon_tipo_pokemon_id_seq OWNER TO jhonatanuff;
 
 --
--- TOC entry 6057 (class 0 OID 0)
--- Dependencies: 273
+-- TOC entry 6059 (class 0 OID 0)
+-- Dependencies: 278
 -- Name: tipo_pokemon_tipo_pokemon_id_seq; Type: SEQUENCE OWNED BY; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -473,7 +473,7 @@ ALTER SEQUENCE projeto_final.tipo_pokemon_tipo_pokemon_id_seq OWNED BY projeto_f
 
 
 --
--- TOC entry 267 (class 1259 OID 31060)
+-- TOC entry 279 (class 1259 OID 31322)
 -- Name: treinador; Type: TABLE; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -489,7 +489,7 @@ CREATE TABLE projeto_final.treinador (
 ALTER TABLE projeto_final.treinador OWNER TO jhonatanuff;
 
 --
--- TOC entry 283 (class 1259 OID 31123)
+-- TOC entry 280 (class 1259 OID 31325)
 -- Name: treinador_batalha; Type: TABLE; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -502,7 +502,7 @@ CREATE TABLE projeto_final.treinador_batalha (
 ALTER TABLE projeto_final.treinador_batalha OWNER TO jhonatanuff;
 
 --
--- TOC entry 272 (class 1259 OID 31080)
+-- TOC entry 281 (class 1259 OID 31328)
 -- Name: treinador_bolsa; Type: TABLE; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -515,7 +515,7 @@ CREATE TABLE projeto_final.treinador_bolsa (
 ALTER TABLE projeto_final.treinador_bolsa OWNER TO jhonatanuff;
 
 --
--- TOC entry 263 (class 1259 OID 31047)
+-- TOC entry 282 (class 1259 OID 31331)
 -- Name: treinador_time; Type: TABLE; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -528,7 +528,7 @@ CREATE TABLE projeto_final.treinador_time (
 ALTER TABLE projeto_final.treinador_time OWNER TO jhonatanuff;
 
 --
--- TOC entry 266 (class 1259 OID 31059)
+-- TOC entry 283 (class 1259 OID 31334)
 -- Name: treinador_treinador_id_seq; Type: SEQUENCE; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -544,8 +544,8 @@ CREATE SEQUENCE projeto_final.treinador_treinador_id_seq
 ALTER SEQUENCE projeto_final.treinador_treinador_id_seq OWNER TO jhonatanuff;
 
 --
--- TOC entry 6058 (class 0 OID 0)
--- Dependencies: 266
+-- TOC entry 6060 (class 0 OID 0)
+-- Dependencies: 283
 -- Name: treinador_treinador_id_seq; Type: SEQUENCE OWNED BY; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -553,7 +553,7 @@ ALTER SEQUENCE projeto_final.treinador_treinador_id_seq OWNED BY projeto_final.t
 
 
 --
--- TOC entry 284 (class 1259 OID 31225)
+-- TOC entry 284 (class 1259 OID 31335)
 -- Name: view_all_pokemons; Type: VIEW; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -578,7 +578,7 @@ CREATE VIEW projeto_final.view_all_pokemons AS
 ALTER VIEW projeto_final.view_all_pokemons OWNER TO jhonatanuff;
 
 --
--- TOC entry 286 (class 1259 OID 31234)
+-- TOC entry 285 (class 1259 OID 31340)
 -- Name: view_media_atributos_tipo_pokemon; Type: VIEW; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -599,7 +599,7 @@ CREATE VIEW projeto_final.view_media_atributos_tipo_pokemon AS
 ALTER VIEW projeto_final.view_media_atributos_tipo_pokemon OWNER TO jhonatanuff;
 
 --
--- TOC entry 285 (class 1259 OID 31230)
+-- TOC entry 286 (class 1259 OID 31345)
 -- Name: view_todas_as_vitorias; Type: VIEW; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -617,7 +617,7 @@ CREATE VIEW projeto_final.view_todas_as_vitorias AS
 ALTER VIEW projeto_final.view_todas_as_vitorias OWNER TO jhonatanuff;
 
 --
--- TOC entry 5786 (class 2604 OID 31120)
+-- TOC entry 5778 (class 2604 OID 31349)
 -- Name: batalha batalha_id; Type: DEFAULT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -625,7 +625,7 @@ ALTER TABLE ONLY projeto_final.batalha ALTER COLUMN batalha_id SET DEFAULT nextv
 
 
 --
--- TOC entry 5781 (class 2604 OID 31070)
+-- TOC entry 5779 (class 2604 OID 31350)
 -- Name: bolsa bolsa_id; Type: DEFAULT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -633,7 +633,7 @@ ALTER TABLE ONLY projeto_final.bolsa ALTER COLUMN bolsa_id SET DEFAULT nextval('
 
 
 --
--- TOC entry 5785 (class 2604 OID 31113)
+-- TOC entry 5780 (class 2604 OID 31351)
 -- Name: ginasio ginasio_id; Type: DEFAULT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -641,7 +641,7 @@ ALTER TABLE ONLY projeto_final.ginasio ALTER COLUMN ginasio_id SET DEFAULT nextv
 
 
 --
--- TOC entry 5782 (class 2604 OID 31077)
+-- TOC entry 5781 (class 2604 OID 31352)
 -- Name: item item_id; Type: DEFAULT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -649,7 +649,7 @@ ALTER TABLE ONLY projeto_final.item ALTER COLUMN item_id SET DEFAULT nextval('pr
 
 
 --
--- TOC entry 5784 (class 2604 OID 31101)
+-- TOC entry 5782 (class 2604 OID 31353)
 -- Name: move move_id; Type: DEFAULT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -657,7 +657,7 @@ ALTER TABLE ONLY projeto_final.move ALTER COLUMN move_id SET DEFAULT nextval('pr
 
 
 --
--- TOC entry 5777 (class 2604 OID 31037)
+-- TOC entry 5783 (class 2604 OID 31354)
 -- Name: pokedex pokedex_id; Type: DEFAULT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -665,7 +665,7 @@ ALTER TABLE ONLY projeto_final.pokedex ALTER COLUMN pokedex_id SET DEFAULT nextv
 
 
 --
--- TOC entry 5778 (class 2604 OID 31044)
+-- TOC entry 5784 (class 2604 OID 31355)
 -- Name: pokemon pokemon_id; Type: DEFAULT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -673,7 +673,7 @@ ALTER TABLE ONLY projeto_final.pokemon ALTER COLUMN pokemon_id SET DEFAULT nextv
 
 
 --
--- TOC entry 5779 (class 2604 OID 31056)
+-- TOC entry 5785 (class 2604 OID 31356)
 -- Name: regiao regiao_id; Type: DEFAULT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -681,7 +681,7 @@ ALTER TABLE ONLY projeto_final.regiao ALTER COLUMN regiao_id SET DEFAULT nextval
 
 
 --
--- TOC entry 5776 (class 2604 OID 31030)
+-- TOC entry 5786 (class 2604 OID 31357)
 -- Name: time time_id; Type: DEFAULT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -689,7 +689,7 @@ ALTER TABLE ONLY projeto_final."time" ALTER COLUMN time_id SET DEFAULT nextval('
 
 
 --
--- TOC entry 5783 (class 2604 OID 31089)
+-- TOC entry 5787 (class 2604 OID 31358)
 -- Name: tipo_pokemon tipo_pokemon_id; Type: DEFAULT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -697,7 +697,7 @@ ALTER TABLE ONLY projeto_final.tipo_pokemon ALTER COLUMN tipo_pokemon_id SET DEF
 
 
 --
--- TOC entry 5780 (class 2604 OID 31063)
+-- TOC entry 5788 (class 2604 OID 31359)
 -- Name: treinador treinador_id; Type: DEFAULT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -705,8 +705,8 @@ ALTER TABLE ONLY projeto_final.treinador ALTER COLUMN treinador_id SET DEFAULT n
 
 
 --
--- TOC entry 6041 (class 0 OID 31117)
--- Dependencies: 282
+-- TOC entry 6017 (class 0 OID 31273)
+-- Dependencies: 256
 -- Data for Name: batalha; Type: TABLE DATA; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -736,8 +736,8 @@ COPY projeto_final.batalha (batalha_id, ginasio_id, data, vencedor_id) FROM stdi
 
 
 --
--- TOC entry 6028 (class 0 OID 31067)
--- Dependencies: 269
+-- TOC entry 6019 (class 0 OID 31277)
+-- Dependencies: 258
 -- Data for Name: bolsa; Type: TABLE DATA; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -758,8 +758,8 @@ COPY projeto_final.bolsa (bolsa_id, cor, modelo) FROM stdin;
 
 
 --
--- TOC entry 6039 (class 0 OID 31110)
--- Dependencies: 280
+-- TOC entry 6021 (class 0 OID 31281)
+-- Dependencies: 260
 -- Data for Name: ginasio; Type: TABLE DATA; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -780,8 +780,8 @@ COPY projeto_final.ginasio (ginasio_id, regiao_id, nome) FROM stdin;
 
 
 --
--- TOC entry 6030 (class 0 OID 31074)
--- Dependencies: 271
+-- TOC entry 6023 (class 0 OID 31285)
+-- Dependencies: 262
 -- Data for Name: item; Type: TABLE DATA; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -840,8 +840,8 @@ COPY projeto_final.item (item_id, bolsa_id, tipo_item, descricao, preco, nome) F
 
 
 --
--- TOC entry 6036 (class 0 OID 31098)
--- Dependencies: 277
+-- TOC entry 6025 (class 0 OID 31289)
+-- Dependencies: 264
 -- Data for Name: move; Type: TABLE DATA; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -871,8 +871,8 @@ COPY projeto_final.move (move_id, categoria, descricao, poder, precisao, nome) F
 
 
 --
--- TOC entry 6019 (class 0 OID 31034)
--- Dependencies: 260
+-- TOC entry 6027 (class 0 OID 31293)
+-- Dependencies: 266
 -- Data for Name: pokedex; Type: TABLE DATA; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1052,8 +1052,8 @@ COPY projeto_final.pokedex (pokedex_id, descricao) FROM stdin;
 
 
 --
--- TOC entry 6021 (class 0 OID 31041)
--- Dependencies: 262
+-- TOC entry 6029 (class 0 OID 31297)
+-- Dependencies: 268
 -- Data for Name: pokemon; Type: TABLE DATA; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1134,8 +1134,8 @@ COPY projeto_final.pokemon (pokemon_id, pokedex_id, nome, lvl, atk, def, sp_def,
 
 
 --
--- TOC entry 6037 (class 0 OID 31104)
--- Dependencies: 278
+-- TOC entry 6030 (class 0 OID 31300)
+-- Dependencies: 269
 -- Data for Name: pokemon_move; Type: TABLE DATA; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1303,8 +1303,8 @@ COPY projeto_final.pokemon_move (pokemon_id, move_id) FROM stdin;
 
 
 --
--- TOC entry 6015 (class 0 OID 31021)
--- Dependencies: 256
+-- TOC entry 6032 (class 0 OID 31304)
+-- Dependencies: 271
 -- Data for Name: pokemon_time; Type: TABLE DATA; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1367,8 +1367,8 @@ COPY projeto_final.pokemon_time (pokemon_id, time_id) FROM stdin;
 
 
 --
--- TOC entry 6034 (class 0 OID 31092)
--- Dependencies: 275
+-- TOC entry 6033 (class 0 OID 31307)
+-- Dependencies: 272
 -- Data for Name: pokemon_tipo_pokemon; Type: TABLE DATA; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1481,8 +1481,8 @@ COPY projeto_final.pokemon_tipo_pokemon (pokemon_id, tipo_pokemon_id) FROM stdin
 
 
 --
--- TOC entry 6024 (class 0 OID 31053)
--- Dependencies: 265
+-- TOC entry 6034 (class 0 OID 31310)
+-- Dependencies: 273
 -- Data for Name: regiao; Type: TABLE DATA; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1500,8 +1500,8 @@ COPY projeto_final.regiao (regiao_id, nome, descricao) FROM stdin;
 
 
 --
--- TOC entry 6017 (class 0 OID 31027)
--- Dependencies: 258
+-- TOC entry 6036 (class 0 OID 31314)
+-- Dependencies: 275
 -- Data for Name: time; Type: TABLE DATA; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1522,8 +1522,8 @@ COPY projeto_final."time" (time_id) FROM stdin;
 
 
 --
--- TOC entry 6033 (class 0 OID 31086)
--- Dependencies: 274
+-- TOC entry 6038 (class 0 OID 31318)
+-- Dependencies: 277
 -- Data for Name: tipo_pokemon; Type: TABLE DATA; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1550,8 +1550,8 @@ COPY projeto_final.tipo_pokemon (tipo_pokemon_id, descricao, nome_tipo) FROM std
 
 
 --
--- TOC entry 6026 (class 0 OID 31060)
--- Dependencies: 267
+-- TOC entry 6040 (class 0 OID 31322)
+-- Dependencies: 279
 -- Data for Name: treinador; Type: TABLE DATA; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1587,8 +1587,8 @@ COPY projeto_final.treinador (treinador_id, regiao_id, nome, sexo, idade) FROM s
 
 
 --
--- TOC entry 6042 (class 0 OID 31123)
--- Dependencies: 283
+-- TOC entry 6041 (class 0 OID 31325)
+-- Dependencies: 280
 -- Data for Name: treinador_batalha; Type: TABLE DATA; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1629,8 +1629,8 @@ COPY projeto_final.treinador_batalha (batalha_id, treinador_id) FROM stdin;
 
 
 --
--- TOC entry 6031 (class 0 OID 31080)
--- Dependencies: 272
+-- TOC entry 6042 (class 0 OID 31328)
+-- Dependencies: 281
 -- Data for Name: treinador_bolsa; Type: TABLE DATA; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1651,8 +1651,8 @@ COPY projeto_final.treinador_bolsa (treinador_id, bolsa_id) FROM stdin;
 
 
 --
--- TOC entry 6022 (class 0 OID 31047)
--- Dependencies: 263
+-- TOC entry 6043 (class 0 OID 31331)
+-- Dependencies: 282
 -- Data for Name: treinador_time; Type: TABLE DATA; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1673,8 +1673,8 @@ COPY projeto_final.treinador_time (treinador_id, time_id) FROM stdin;
 
 
 --
--- TOC entry 6059 (class 0 OID 0)
--- Dependencies: 281
+-- TOC entry 6061 (class 0 OID 0)
+-- Dependencies: 257
 -- Name: batalha_batalha_id_seq; Type: SEQUENCE SET; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1682,8 +1682,8 @@ SELECT pg_catalog.setval('projeto_final.batalha_batalha_id_seq', 21, true);
 
 
 --
--- TOC entry 6060 (class 0 OID 0)
--- Dependencies: 268
+-- TOC entry 6062 (class 0 OID 0)
+-- Dependencies: 259
 -- Name: bolsa_bolsa_id_seq; Type: SEQUENCE SET; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1691,8 +1691,8 @@ SELECT pg_catalog.setval('projeto_final.bolsa_bolsa_id_seq', 12, true);
 
 
 --
--- TOC entry 6061 (class 0 OID 0)
--- Dependencies: 279
+-- TOC entry 6063 (class 0 OID 0)
+-- Dependencies: 261
 -- Name: ginasio_ginasio_id_seq; Type: SEQUENCE SET; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1700,8 +1700,8 @@ SELECT pg_catalog.setval('projeto_final.ginasio_ginasio_id_seq', 12, true);
 
 
 --
--- TOC entry 6062 (class 0 OID 0)
--- Dependencies: 270
+-- TOC entry 6064 (class 0 OID 0)
+-- Dependencies: 263
 -- Name: item_item_id_seq; Type: SEQUENCE SET; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1709,8 +1709,8 @@ SELECT pg_catalog.setval('projeto_final.item_item_id_seq', 50, true);
 
 
 --
--- TOC entry 6063 (class 0 OID 0)
--- Dependencies: 276
+-- TOC entry 6065 (class 0 OID 0)
+-- Dependencies: 265
 -- Name: move_move_id_seq; Type: SEQUENCE SET; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1718,8 +1718,8 @@ SELECT pg_catalog.setval('projeto_final.move_move_id_seq', 1, false);
 
 
 --
--- TOC entry 6064 (class 0 OID 0)
--- Dependencies: 259
+-- TOC entry 6066 (class 0 OID 0)
+-- Dependencies: 267
 -- Name: pokedex_pokedex_id_seq; Type: SEQUENCE SET; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1727,8 +1727,8 @@ SELECT pg_catalog.setval('projeto_final.pokedex_pokedex_id_seq', 151, true);
 
 
 --
--- TOC entry 6065 (class 0 OID 0)
--- Dependencies: 261
+-- TOC entry 6067 (class 0 OID 0)
+-- Dependencies: 270
 -- Name: pokemon_pokemon_id_seq; Type: SEQUENCE SET; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1736,8 +1736,8 @@ SELECT pg_catalog.setval('projeto_final.pokemon_pokemon_id_seq', 72, true);
 
 
 --
--- TOC entry 6066 (class 0 OID 0)
--- Dependencies: 264
+-- TOC entry 6068 (class 0 OID 0)
+-- Dependencies: 274
 -- Name: regiao_regiao_id_seq; Type: SEQUENCE SET; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1745,8 +1745,8 @@ SELECT pg_catalog.setval('projeto_final.regiao_regiao_id_seq', 9, true);
 
 
 --
--- TOC entry 6067 (class 0 OID 0)
--- Dependencies: 257
+-- TOC entry 6069 (class 0 OID 0)
+-- Dependencies: 276
 -- Name: time_time_id_seq; Type: SEQUENCE SET; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1754,8 +1754,8 @@ SELECT pg_catalog.setval('projeto_final.time_time_id_seq', 1, false);
 
 
 --
--- TOC entry 6068 (class 0 OID 0)
--- Dependencies: 273
+-- TOC entry 6070 (class 0 OID 0)
+-- Dependencies: 278
 -- Name: tipo_pokemon_tipo_pokemon_id_seq; Type: SEQUENCE SET; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1763,8 +1763,8 @@ SELECT pg_catalog.setval('projeto_final.tipo_pokemon_tipo_pokemon_id_seq', 18, t
 
 
 --
--- TOC entry 6069 (class 0 OID 0)
--- Dependencies: 266
+-- TOC entry 6071 (class 0 OID 0)
+-- Dependencies: 283
 -- Name: treinador_treinador_id_seq; Type: SEQUENCE SET; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1772,7 +1772,7 @@ SELECT pg_catalog.setval('projeto_final.treinador_treinador_id_seq', 27, true);
 
 
 --
--- TOC entry 5836 (class 2606 OID 31122)
+-- TOC entry 5792 (class 2606 OID 31361)
 -- Name: batalha batalha_pkey; Type: CONSTRAINT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1781,7 +1781,7 @@ ALTER TABLE ONLY projeto_final.batalha
 
 
 --
--- TOC entry 5812 (class 2606 OID 31072)
+-- TOC entry 5795 (class 2606 OID 31363)
 -- Name: bolsa bolsa_pkey; Type: CONSTRAINT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1790,7 +1790,7 @@ ALTER TABLE ONLY projeto_final.bolsa
 
 
 --
--- TOC entry 5832 (class 2606 OID 31115)
+-- TOC entry 5798 (class 2606 OID 31365)
 -- Name: ginasio ginasio_pkey; Type: CONSTRAINT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1799,7 +1799,7 @@ ALTER TABLE ONLY projeto_final.ginasio
 
 
 --
--- TOC entry 5816 (class 2606 OID 31079)
+-- TOC entry 5802 (class 2606 OID 31367)
 -- Name: item item_pkey; Type: CONSTRAINT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1808,7 +1808,7 @@ ALTER TABLE ONLY projeto_final.item
 
 
 --
--- TOC entry 5827 (class 2606 OID 31103)
+-- TOC entry 5806 (class 2606 OID 31369)
 -- Name: move move_pkey; Type: CONSTRAINT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1817,7 +1817,7 @@ ALTER TABLE ONLY projeto_final.move
 
 
 --
--- TOC entry 5793 (class 2606 OID 31039)
+-- TOC entry 5808 (class 2606 OID 31371)
 -- Name: pokedex pokedex_pkey; Type: CONSTRAINT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1826,7 +1826,7 @@ ALTER TABLE ONLY projeto_final.pokedex
 
 
 --
--- TOC entry 5829 (class 2606 OID 31108)
+-- TOC entry 5815 (class 2606 OID 31373)
 -- Name: pokemon_move pokemon_move_pkey; Type: CONSTRAINT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1835,7 +1835,7 @@ ALTER TABLE ONLY projeto_final.pokemon_move
 
 
 --
--- TOC entry 5798 (class 2606 OID 31046)
+-- TOC entry 5813 (class 2606 OID 31375)
 -- Name: pokemon pokemon_pkey; Type: CONSTRAINT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1844,7 +1844,7 @@ ALTER TABLE ONLY projeto_final.pokemon
 
 
 --
--- TOC entry 5788 (class 2606 OID 31025)
+-- TOC entry 5817 (class 2606 OID 31377)
 -- Name: pokemon_time pokemon_time_pkey; Type: CONSTRAINT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1853,7 +1853,7 @@ ALTER TABLE ONLY projeto_final.pokemon_time
 
 
 --
--- TOC entry 5824 (class 2606 OID 31096)
+-- TOC entry 5820 (class 2606 OID 31379)
 -- Name: pokemon_tipo_pokemon pokemon_tipo_pokemon_pkey; Type: CONSTRAINT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1862,7 +1862,7 @@ ALTER TABLE ONLY projeto_final.pokemon_tipo_pokemon
 
 
 --
--- TOC entry 5804 (class 2606 OID 31058)
+-- TOC entry 5823 (class 2606 OID 31381)
 -- Name: regiao regiao_pkey; Type: CONSTRAINT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1871,7 +1871,7 @@ ALTER TABLE ONLY projeto_final.regiao
 
 
 --
--- TOC entry 5791 (class 2606 OID 31032)
+-- TOC entry 5825 (class 2606 OID 31383)
 -- Name: time time_pkey; Type: CONSTRAINT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1880,7 +1880,7 @@ ALTER TABLE ONLY projeto_final."time"
 
 
 --
--- TOC entry 5822 (class 2606 OID 31091)
+-- TOC entry 5827 (class 2606 OID 31385)
 -- Name: tipo_pokemon tipo_pokemon_pkey; Type: CONSTRAINT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1889,7 +1889,7 @@ ALTER TABLE ONLY projeto_final.tipo_pokemon
 
 
 --
--- TOC entry 5838 (class 2606 OID 31127)
+-- TOC entry 5834 (class 2606 OID 31387)
 -- Name: treinador_batalha treinador_batalha_pkey; Type: CONSTRAINT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1898,7 +1898,7 @@ ALTER TABLE ONLY projeto_final.treinador_batalha
 
 
 --
--- TOC entry 5820 (class 2606 OID 31084)
+-- TOC entry 5837 (class 2606 OID 31389)
 -- Name: treinador_bolsa treinador_bolsa_pkey; Type: CONSTRAINT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1907,7 +1907,7 @@ ALTER TABLE ONLY projeto_final.treinador_bolsa
 
 
 --
--- TOC entry 5808 (class 2606 OID 31065)
+-- TOC entry 5831 (class 2606 OID 31391)
 -- Name: treinador treinador_pkey; Type: CONSTRAINT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1916,7 +1916,7 @@ ALTER TABLE ONLY projeto_final.treinador
 
 
 --
--- TOC entry 5800 (class 2606 OID 31051)
+-- TOC entry 5839 (class 2606 OID 31393)
 -- Name: treinador_time treinador_time_pkey; Type: CONSTRAINT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1925,7 +1925,7 @@ ALTER TABLE ONLY projeto_final.treinador_time
 
 
 --
--- TOC entry 5833 (class 1259 OID 31257)
+-- TOC entry 5789 (class 1259 OID 31394)
 -- Name: batalha_data; Type: INDEX; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1933,7 +1933,7 @@ CREATE INDEX batalha_data ON projeto_final.batalha USING btree (data);
 
 
 --
--- TOC entry 5834 (class 1259 OID 31265)
+-- TOC entry 5790 (class 1259 OID 31395)
 -- Name: batalha_ginasio_id; Type: INDEX; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1941,7 +1941,7 @@ CREATE INDEX batalha_ginasio_id ON projeto_final.batalha USING hash (ginasio_id)
 
 
 --
--- TOC entry 5810 (class 1259 OID 31261)
+-- TOC entry 5793 (class 1259 OID 31396)
 -- Name: bolsa_cor; Type: INDEX; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1949,7 +1949,7 @@ CREATE INDEX bolsa_cor ON projeto_final.bolsa USING hash (cor);
 
 
 --
--- TOC entry 5830 (class 1259 OID 31256)
+-- TOC entry 5796 (class 1259 OID 31397)
 -- Name: ginasio_nome; Type: INDEX; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1957,7 +1957,7 @@ CREATE INDEX ginasio_nome ON projeto_final.ginasio USING hash (nome);
 
 
 --
--- TOC entry 5813 (class 1259 OID 31259)
+-- TOC entry 5799 (class 1259 OID 31398)
 -- Name: item_bolsa_id; Type: INDEX; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1965,7 +1965,7 @@ CREATE INDEX item_bolsa_id ON projeto_final.item USING hash (bolsa_id);
 
 
 --
--- TOC entry 5814 (class 1259 OID 31255)
+-- TOC entry 5800 (class 1259 OID 31399)
 -- Name: item_nome; Type: INDEX; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1973,7 +1973,7 @@ CREATE INDEX item_nome ON projeto_final.item USING hash (nome);
 
 
 --
--- TOC entry 5817 (class 1259 OID 31253)
+-- TOC entry 5803 (class 1259 OID 31400)
 -- Name: item_tipo_item; Type: INDEX; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1981,7 +1981,7 @@ CREATE INDEX item_tipo_item ON projeto_final.item USING hash (tipo_item);
 
 
 --
--- TOC entry 5825 (class 1259 OID 31266)
+-- TOC entry 5804 (class 1259 OID 31401)
 -- Name: move_nome; Type: INDEX; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1989,7 +1989,7 @@ CREATE INDEX move_nome ON projeto_final.move USING hash (nome);
 
 
 --
--- TOC entry 5794 (class 1259 OID 31258)
+-- TOC entry 5809 (class 1259 OID 31402)
 -- Name: pokemon_atk; Type: INDEX; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -1997,7 +1997,7 @@ CREATE INDEX pokemon_atk ON projeto_final.pokemon USING hash (atk);
 
 
 --
--- TOC entry 5795 (class 1259 OID 31254)
+-- TOC entry 5810 (class 1259 OID 31403)
 -- Name: pokemon_lvl; Type: INDEX; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -2005,7 +2005,7 @@ CREATE INDEX pokemon_lvl ON projeto_final.pokemon USING btree (lvl);
 
 
 --
--- TOC entry 5796 (class 1259 OID 31267)
+-- TOC entry 5811 (class 1259 OID 31404)
 -- Name: pokemon_nome; Type: INDEX; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -2013,7 +2013,7 @@ CREATE INDEX pokemon_nome ON projeto_final.pokemon USING hash (nome);
 
 
 --
--- TOC entry 5789 (class 1259 OID 31270)
+-- TOC entry 5818 (class 1259 OID 31405)
 -- Name: pokemon_time_time_id; Type: INDEX; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -2021,7 +2021,7 @@ CREATE INDEX pokemon_time_time_id ON projeto_final.pokemon_time USING hash (time
 
 
 --
--- TOC entry 5802 (class 1259 OID 31263)
+-- TOC entry 5821 (class 1259 OID 31406)
 -- Name: regiao_nome; Type: INDEX; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -2029,7 +2029,7 @@ CREATE INDEX regiao_nome ON projeto_final.regiao USING hash (nome);
 
 
 --
--- TOC entry 5818 (class 1259 OID 31262)
+-- TOC entry 5835 (class 1259 OID 31407)
 -- Name: treinador_bolsa_bolsa_id; Type: INDEX; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -2037,7 +2037,7 @@ CREATE INDEX treinador_bolsa_bolsa_id ON projeto_final.treinador_bolsa USING has
 
 
 --
--- TOC entry 5805 (class 1259 OID 31260)
+-- TOC entry 5828 (class 1259 OID 31408)
 -- Name: treinador_idade; Type: INDEX; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -2045,7 +2045,7 @@ CREATE INDEX treinador_idade ON projeto_final.treinador USING btree (idade);
 
 
 --
--- TOC entry 5806 (class 1259 OID 31268)
+-- TOC entry 5829 (class 1259 OID 31409)
 -- Name: treinador_nome; Type: INDEX; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -2053,7 +2053,7 @@ CREATE INDEX treinador_nome ON projeto_final.treinador USING hash (nome);
 
 
 --
--- TOC entry 5809 (class 1259 OID 31264)
+-- TOC entry 5832 (class 1259 OID 31410)
 -- Name: treinador_regiao_id; Type: INDEX; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -2061,7 +2061,7 @@ CREATE INDEX treinador_regiao_id ON projeto_final.treinador USING hash (regiao_i
 
 
 --
--- TOC entry 5801 (class 1259 OID 31269)
+-- TOC entry 5840 (class 1259 OID 31411)
 -- Name: treinador_time_time_id; Type: INDEX; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -2069,7 +2069,7 @@ CREATE INDEX treinador_time_time_id ON projeto_final.treinador_time USING hash (
 
 
 --
--- TOC entry 5860 (class 2620 OID 31224)
+-- TOC entry 5865 (class 2620 OID 31412)
 -- Name: treinador_time before_insert_update_treinador_time; Type: TRIGGER; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -2077,7 +2077,7 @@ CREATE TRIGGER before_insert_update_treinador_time BEFORE INSERT OR UPDATE ON pr
 
 
 --
--- TOC entry 5857 (class 2620 OID 31222)
+-- TOC entry 5862 (class 2620 OID 31413)
 -- Name: pokemon_time limitar_quantidade_pokemon; Type: TRIGGER; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -2085,7 +2085,7 @@ CREATE TRIGGER limitar_quantidade_pokemon BEFORE INSERT ON projeto_final.pokemon
 
 
 --
--- TOC entry 5861 (class 2620 OID 31218)
+-- TOC entry 5860 (class 2620 OID 31414)
 -- Name: move move_before_insert_update; Type: TRIGGER; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -2093,7 +2093,7 @@ CREATE TRIGGER move_before_insert_update BEFORE INSERT OR UPDATE ON projeto_fina
 
 
 --
--- TOC entry 5859 (class 2620 OID 31219)
+-- TOC entry 5861 (class 2620 OID 31415)
 -- Name: pokemon pokemon_before_insert_update; Type: TRIGGER; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -2101,7 +2101,7 @@ CREATE TRIGGER pokemon_before_insert_update BEFORE INSERT OR UPDATE ON projeto_f
 
 
 --
--- TOC entry 5858 (class 2620 OID 31223)
+-- TOC entry 5863 (class 2620 OID 31416)
 -- Name: pokemon_time trigger_proibir_associacao_pokemon_time; Type: TRIGGER; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -2109,7 +2109,7 @@ CREATE TRIGGER trigger_proibir_associacao_pokemon_time BEFORE INSERT OR UPDATE O
 
 
 --
--- TOC entry 5863 (class 2620 OID 31220)
+-- TOC entry 5864 (class 2620 OID 31417)
 -- Name: treinador_batalha trigger_verificar_limite_treinadores; Type: TRIGGER; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -2117,7 +2117,7 @@ CREATE TRIGGER trigger_verificar_limite_treinadores BEFORE INSERT ON projeto_fin
 
 
 --
--- TOC entry 5862 (class 2620 OID 31221)
+-- TOC entry 5859 (class 2620 OID 31418)
 -- Name: batalha verificar_vencedor_batalha_trigger; Type: TRIGGER; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -2125,7 +2125,7 @@ CREATE TRIGGER verificar_vencedor_batalha_trigger BEFORE UPDATE ON projeto_final
 
 
 --
--- TOC entry 5852 (class 2606 OID 31193)
+-- TOC entry 5841 (class 2606 OID 31419)
 -- Name: batalha fk_batalha_ginasio; Type: FK CONSTRAINT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -2134,7 +2134,7 @@ ALTER TABLE ONLY projeto_final.batalha
 
 
 --
--- TOC entry 5853 (class 2606 OID 31203)
+-- TOC entry 5842 (class 2606 OID 31424)
 -- Name: batalha fk_batalha_ginasio_id; Type: FK CONSTRAINT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -2143,7 +2143,7 @@ ALTER TABLE ONLY projeto_final.batalha
 
 
 --
--- TOC entry 5854 (class 2606 OID 31198)
+-- TOC entry 5843 (class 2606 OID 31429)
 -- Name: batalha fk_batalha_treinador; Type: FK CONSTRAINT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -2152,7 +2152,7 @@ ALTER TABLE ONLY projeto_final.batalha
 
 
 --
--- TOC entry 5845 (class 2606 OID 31168)
+-- TOC entry 5844 (class 2606 OID 31434)
 -- Name: item fk_item_bolsa; Type: FK CONSTRAINT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -2161,7 +2161,7 @@ ALTER TABLE ONLY projeto_final.item
 
 
 --
--- TOC entry 5850 (class 2606 OID 31183)
+-- TOC entry 5846 (class 2606 OID 31439)
 -- Name: pokemon_move fk_pokemon_move_move; Type: FK CONSTRAINT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -2170,7 +2170,7 @@ ALTER TABLE ONLY projeto_final.pokemon_move
 
 
 --
--- TOC entry 5851 (class 2606 OID 31188)
+-- TOC entry 5847 (class 2606 OID 31444)
 -- Name: pokemon_move fk_pokemon_move_pokemon; Type: FK CONSTRAINT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -2179,7 +2179,7 @@ ALTER TABLE ONLY projeto_final.pokemon_move
 
 
 --
--- TOC entry 5841 (class 2606 OID 31138)
+-- TOC entry 5845 (class 2606 OID 31449)
 -- Name: pokemon fk_pokemon_pokedex; Type: FK CONSTRAINT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -2188,7 +2188,7 @@ ALTER TABLE ONLY projeto_final.pokemon
 
 
 --
--- TOC entry 5839 (class 2606 OID 31133)
+-- TOC entry 5848 (class 2606 OID 31454)
 -- Name: pokemon_time fk_pokemon_pokemon_id; Type: FK CONSTRAINT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -2197,7 +2197,7 @@ ALTER TABLE ONLY projeto_final.pokemon_time
 
 
 --
--- TOC entry 5840 (class 2606 OID 31128)
+-- TOC entry 5849 (class 2606 OID 31459)
 -- Name: pokemon_time fk_pokemon_time_time; Type: FK CONSTRAINT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -2206,7 +2206,7 @@ ALTER TABLE ONLY projeto_final.pokemon_time
 
 
 --
--- TOC entry 5848 (class 2606 OID 31178)
+-- TOC entry 5850 (class 2606 OID 31464)
 -- Name: pokemon_tipo_pokemon fk_pokemon_tipo_pokemon_pokemon; Type: FK CONSTRAINT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -2215,7 +2215,7 @@ ALTER TABLE ONLY projeto_final.pokemon_tipo_pokemon
 
 
 --
--- TOC entry 5849 (class 2606 OID 31173)
+-- TOC entry 5851 (class 2606 OID 31469)
 -- Name: pokemon_tipo_pokemon fk_pokemon_tipo_pokemon_tipo_pokemon; Type: FK CONSTRAINT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -2224,7 +2224,7 @@ ALTER TABLE ONLY projeto_final.pokemon_tipo_pokemon
 
 
 --
--- TOC entry 5855 (class 2606 OID 31208)
+-- TOC entry 5853 (class 2606 OID 31474)
 -- Name: treinador_batalha fk_treinador_batalha_batalha; Type: FK CONSTRAINT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -2233,7 +2233,7 @@ ALTER TABLE ONLY projeto_final.treinador_batalha
 
 
 --
--- TOC entry 5856 (class 2606 OID 31213)
+-- TOC entry 5854 (class 2606 OID 31479)
 -- Name: treinador_batalha fk_treinador_batalha_treinador; Type: FK CONSTRAINT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -2242,7 +2242,7 @@ ALTER TABLE ONLY projeto_final.treinador_batalha
 
 
 --
--- TOC entry 5846 (class 2606 OID 31158)
+-- TOC entry 5855 (class 2606 OID 31484)
 -- Name: treinador_bolsa fk_treinador_bolsa_bolsa; Type: FK CONSTRAINT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -2251,7 +2251,7 @@ ALTER TABLE ONLY projeto_final.treinador_bolsa
 
 
 --
--- TOC entry 5847 (class 2606 OID 31163)
+-- TOC entry 5856 (class 2606 OID 31489)
 -- Name: treinador_bolsa fk_treinador_bolsa_treinador_id; Type: FK CONSTRAINT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -2260,7 +2260,7 @@ ALTER TABLE ONLY projeto_final.treinador_bolsa
 
 
 --
--- TOC entry 5844 (class 2606 OID 31153)
+-- TOC entry 5852 (class 2606 OID 31494)
 -- Name: treinador fk_treinador_regiao; Type: FK CONSTRAINT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -2269,7 +2269,7 @@ ALTER TABLE ONLY projeto_final.treinador
 
 
 --
--- TOC entry 5842 (class 2606 OID 31143)
+-- TOC entry 5857 (class 2606 OID 31499)
 -- Name: treinador_time fk_treinador_time_time; Type: FK CONSTRAINT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -2278,7 +2278,7 @@ ALTER TABLE ONLY projeto_final.treinador_time
 
 
 --
--- TOC entry 5843 (class 2606 OID 31148)
+-- TOC entry 5858 (class 2606 OID 31504)
 -- Name: treinador_time fk_treinador_time_treinador_id; Type: FK CONSTRAINT; Schema: projeto_final; Owner: jhonatanuff
 --
 
@@ -2286,7 +2286,7 @@ ALTER TABLE ONLY projeto_final.treinador_time
     ADD CONSTRAINT fk_treinador_time_treinador_id FOREIGN KEY (treinador_id) REFERENCES projeto_final.treinador(treinador_id);
 
 
--- Completed on 2023-12-14 22:01:37
+-- Completed on 2023-12-14 20:56:38
 
 --
 -- PostgreSQL database dump complete
