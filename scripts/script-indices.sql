@@ -23,7 +23,7 @@ em "-- Treinador do time e Pokémon mais forte por time"
 sobre expressões do tipo exact match
 */
 
-CREATE INDEX treinador_time_time_id ON projeto_final.treinador_time_id(time_id) USING hash;
+CREATE INDEX treinador_time_time_id ON projeto_final.treinador_time USING hash(time_id);
 
 /*
 Criado para acelerar JOIN PROJETO_FINAL.POKEMON_TIME PT ON TT.TIME_ID = PT.TIME_ID das consultas:
@@ -32,7 +32,7 @@ já que joins são custosos e nenhuma dessas colunas são primary keys, mas sim 
 sobre expressões do tipo exact match
 */
 
-CREATE INDEX pokemon_time_time_id ON projeto_final.pokemon_time(time_id) USING hash;
+CREATE INDEX pokemon_time_time_id ON projeto_final.pokemon_time USING hash(time_id) ;
 
 /*
 Criado para acelerar "WHERE T.NOME = 'Kleber';" da consulta "-- Listar todos os Pokémon de um determinado treinador e seu respectivo time:".
@@ -41,7 +41,7 @@ hash pois a expressão é do tipo exact match
 Esse índice também acelera a cláusula WHERE da função obter_info_treinador
 */
 
-CREATE INDEX treinador_nome on projeto_final.treinador(treinador_nome) USING hash;
+CREATE INDEX treinador_nome on projeto_final.treinador  USING hash(nome);
 
 /*
 Criado para acelerar "WHERE P.NOME = 'golbat';" da consulta "-- Listar todos os treinadores que têm um Pokémon específico:".
@@ -49,7 +49,7 @@ O índice foi criado para essa coluna pois ela não é primary key e é usada em
 hash pois a expressão é do tipo exact match
 */
 
-CREATE INDEX pokemon_nome on projeto_final.pokemon(pokemon_nome) USING hash
+CREATE INDEX pokemon_nome on projeto_final.pokemon  USING hash(nome);
 
 /*
 Criado para acelerar "WHERE M.NOME = 'Pound';" da consulta "-- Listar todos os Pokémon que aprenderam um movimento específico:".
@@ -57,7 +57,7 @@ O índice foi criado para essa coluna pois ela não é primary key e é usada em
 hash pois a expressão é do tipo exact match
 */
 
-CREATE INDEX move_nome on projeto_final.move(nome) USING hash
+CREATE INDEX move_nome on projeto_final.move  USING hash(nome);
 
 /*
 Criado para acelerar as expressões "WHERE B.GINASIO_ID = 8;" e "JOIN PROJETO_FINAL.GINASIO G ON B.GINASIO_ID = G.GINASIO_ID" das consultas "-- Listar todos os treinadores que participaram de batalhas em um ginásio específico:" e "-- Listando treinadores que nunca batalharam em um ginasio",respectivamente.
@@ -66,7 +66,7 @@ Além disso, na primeira consulta é usada em uma expressão WHERE e, na segunda
 Usou-se hash pois as expressões são do tipo exact match
 */
 
-CREATE INDEX batalha_ginasio_id on projeto_final.batalha(ginasio_id) USING hash
+CREATE INDEX batalha_ginasio_id on projeto_final.batalha USING hash(ginasio_id);
 
 /*
 Criado para acelerar as expressões
@@ -86,7 +86,7 @@ Na segunda, é a coluna ser usada em um join, operação custosa. A expressão t
 Esse índice também acelera o join da função obter_info_treinador e obter_info_treinador, onde o hash também é o melhor tipo de índice pelo join ser feito sobre um exact match.
 */
 
-CREATE INDEX treinador_regiao_id ON projeto_final.treinador(regiao_id) USING hash
+CREATE INDEX treinador_regiao_id ON projeto_final.treinador USING hash(regiao_id);
 
 /*
 Criado para acelerar expressões das consultas "(SELECT REGIAO_ID FROM PROJETO_FINAL.REGIAO WHERE NOME = 'Kanto');" e 
@@ -98,7 +98,7 @@ das consultas "-- Listar todos os treinadores que venceram batalhas em uma deter
 O índice foi criado para essa coluna pois ela não é primary key e é usada em expressões WHERE. Usou-se hash pois as expressões são do tipo exact match.
 */
 
-CREATE INDEX regiao_nome ON projeto_final.regiao(nome) USING hash
+CREATE INDEX regiao_nome ON projeto_final.regiao USING hash(nome);
 
 /*
 Criado para acelerar "PROJETO_FINAL.BOLSA B ON TB.BOLSA_ID = B.BOLSA_ID e "JOIN PROJETO_FINAL.TREINADOR_BOLSA TB ON B.BOLSA_ID = TB.BOLSA_ID"
@@ -106,7 +106,7 @@ das consultas "-- Listar todos os treinadores que têm uma bolsa de determinada 
 O índice foi criado para essa coluna pois ela não é primary key, é foreign key para bolsa e é usada em uma expressão JOIN. Usou-se hash pois a expressão é do tipo exact match.
 */
 
-CREATE INDEX treinador_bolsa_bolsa_id ON projeto_final.treinador_bolsa(bolsa_id) USING hash
+CREATE INDEX treinador_bolsa_bolsa_id ON projeto_final.treinador_bolsa USING hash(bolsa_id);
 
 /*
 Criado para acelerar "B.COR = 'Laranja'"
@@ -114,7 +114,7 @@ da consulta "-- Listar todos os treinadores que têm uma bolsa de determinada co
 O índice foi criado para essa coluna pois ela não é primary key e é usada em uma expressão WHERE. Usou-se hash pois a expressão é do tipo exact match.
 */
 
-CREATE INDEX bolsa_cor ON projeto_final.bolsa_cor(cor) USING hash
+CREATE INDEX bolsa_cor ON projeto_final.bolsa USING hash(cor);
 
 /*
 Criado para acelerar 
@@ -130,7 +130,7 @@ da consulta "-- Treinadores que participaram de batalhas nos últimos 15 meses e
 O índice foi criado para essa coluna pois ela não é primary key e é usada em uma expressão WHERE. Usou-se btree pois as expressão são feitas em busca de valores dentro de um intervalo.
 */
 
-CREATE INDEX treinador_idade ON projeto_final.treinador USING btree(idade)
+CREATE INDEX treinador_idade ON projeto_final.treinador USING btree(idade);
 
 /*
 Criado para acelerar "JOIN PROJETO_FINAL.ITEM I ON B.BOLSA_ID = I.BOLSA_ID" e "JOIN PROJETO_FINAL.BOLSA B ON I.BOLSA_ID = B.BOLSA_ID"
@@ -138,7 +138,7 @@ das consultas "-- Listar todos os treinadores que possuem um item de um tipo esp
 O índice foi criado para essa coluna pois ela não é primary key, é foreign key para a tabela bolsa e é usada em uma expressão JOIN. Usou-se hash pois a expressão é do tipo exact match.
 */
 
-CREATE INDEX item_bolsa_id ON projeto_final.item(bolsa_id) USING hash
+CREATE INDEX item_bolsa_id ON projeto_final.item USING hash(bolsa_id);
 
 /*
 Criado para acelerar "WHERE I.TIPO_ITEM = 'evolution';"
@@ -146,7 +146,7 @@ da consulta "-- Listar todos os treinadores que possuem um item de um tipo espec
 O índice foi criado para essa coluna pois ela não é primary key e é usada em uma expressão WHERE. Usou-se hash pois a expressão é do tipo exact match.
 */
 
-CREATE INDEX item_tipo_item ON projeto_final.item(tipo_item) USING hash
+CREATE INDEX item_tipo_item ON projeto_final.item  USING hash(tipo_item);
 
 /*
 Criado para acelerar "WHERE TP.NOME_TIPO = 'Normal';" e "WHERE TP.NOME_TIPO = 'Normal' AND P.LVL > 90;"
@@ -154,28 +154,28 @@ das consultas "-- Listar todos os treinadores que possuem um Pokémon de um dete
 O índice foi criado para essa coluna pois ela não é primary key e é usada em expressões WHERE. Usou-se hash pois a expressão é do tipo exact match.
 */
 
-CREATE INDEX tipo_pokemon ON projeto_final.tipo_pokemon(nome_tipo) USING hash
+CREATE INDEX tipo_pokemon ON projeto_final.tipo_pokemon USING hash(nome_tipo);
 
 /*
 Criado para acelerar "WHERE TP.NOME_TIPO = 'Normal' AND P.LVL > 90;" na consulta "-- Listar todos os treinadores que possuem um Pokémon de um tipo específico e com nível superior a um determinado valor:".
 O índice foi criado para essa coluna pois ela não é primary key e é usada em expressões WHERE. Usou-se btree pois a expressão é feita sobre uma comparação com um intervalo de valores.
 */
 
-CREATE INDEX pokemon_lvl ON projeto_final.pokemon USING btree(lvl)
+CREATE INDEX pokemon_lvl ON projeto_final.pokemon USING btree(lvl);
 
 /*
 Criado para acelerar "WHERE I.NOME = 'rare-candy" na consulta "-- Consulta para ver quantas bolsas possui tal item buscando por nome e mostre o nome dos treinadores".
 O índice foi criado para essa coluna pois ela não é primary key e é usada em uma expressão WHERE. Usou-se hash pois a expressão é do tipo exact match"
 */
 
-CREATE INDEX item_nome ON projeto_final.item(nome) USING hash
+CREATE INDEX item_nome ON projeto_final.item USING hash(nome);
 
 /*
 Criado para acelerar "G.NOME = 'Ginásio Elétrico'" na consulta "-- Listagem de ganhadores por determinado ginásio".
 O índice foi criado para essa coluna pois ela não é primary key e é usada em uma expressão WHERE. Usou-se hash pois a expressão é do tipo exact match"
 */
 
-CREATE INDEX ginasio_nome ON projeto_final.ginasio(nome) USING hash
+CREATE INDEX ginasio_nome ON projeto_final.ginasio USING hash (nome);
 
 /*
 Criado para acelerar "WHERE
@@ -185,7 +185,7 @@ na consulta "-- Treinadores que participaram de batalhas nos últimos 15 meses e
 O índice foi criado para essa coluna pois ela não é primary key e é usada em uma expressão WHERE. Usou-se btree pois a expressão é feita sobre uma comparação com um intervalo de valores.
 */
 
-CREATE INDEX batalha_data ON projeto_final.batalha USING btree(data)
+CREATE INDEX batalha_data ON projeto_final.batalha USING btree(data);
 
 /*
 Criado para acelerar 
@@ -204,4 +204,4 @@ na consulta "-- Treinador do time e Pokémon mais forte por time".
 O índice foi criado para essa coluna pois ela não é a primary key e é usada em uma expressão WHERE. Usou-se hash pois a expressão é do tipo exact match.
 */
 
-CREATE INDEX pokemon_atk ON projeto_final.pokemon(atk) USING hash
+CREATE INDEX pokemon_atk ON projeto_final.pokemon USING hash(atk);
