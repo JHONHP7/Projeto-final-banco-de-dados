@@ -20,17 +20,16 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-@Table(name = "REGIAO")
-public class RegiaoEntity implements Serializable {
+@Table(name = "POKEDEX")
+public class PokedexEntity implements Serializable {
 	/**
 	 * 
 	 */
+	private static final long serialVersionUID = -5719506174272457841L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "REGIAO_ID")
+	@Column(name = "POKEDEX_ID")
 	private Long id;
-	private static final long serialVersionUID = 6520877088520170802L;
-	private String Name;
 	private String descricao;
 
 }
