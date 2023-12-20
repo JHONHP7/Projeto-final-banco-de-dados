@@ -1,7 +1,11 @@
 # des.yaml
 
-postgresql:
-  enabled: true
-  postgresqlPassword: 1996
-  postgresqlDatabase: postgres
-  postgresqlUsername: postgres
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: 1996
+  jpa:
+    open-in-view: true
+    hibernate:
+      ddl-auto: update
