@@ -17,6 +17,10 @@ import br.uff.id.jhonatan.pokemonbe.util.DateUtil;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 
+/**
+ * enpoint: localhost:8080/regioes
+ */
+
 @RestController
 @RequestMapping("regioes")
 @Log4j2
