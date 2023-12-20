@@ -12,9 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.uff.id.jhonatan.pokemonbe.entities.PokedexEntity;
-import br.uff.id.jhonatan.pokemonbe.entities.RegiaoEntity;
 import br.uff.id.jhonatan.pokemonbe.service.PokedexService;
-import br.uff.id.jhonatan.pokemonbe.service.RegiaoService;
 import br.uff.id.jhonatan.pokemonbe.util.DateUtil;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;

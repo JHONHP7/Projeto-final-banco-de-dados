@@ -3,8 +3,6 @@ package br.uff.id.jhonatan.pokemonbe;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import br.uff.id.jhonatan.pokemonbe.entities.RegiaoEntity;
-
 @SpringBootApplication
 public class PokemonBeApplication {
 
