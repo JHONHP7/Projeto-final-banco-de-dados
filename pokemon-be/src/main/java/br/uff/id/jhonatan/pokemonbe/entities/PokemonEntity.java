@@ -36,7 +36,7 @@ public class PokemonEntity implements Serializable{
     private Long velocidade;
     private Long hp;
     private Long sp_ataque;
-    private Long sq_defesa;
+    private Long sp_defesa;
 
     @ManyToOne
     private PokedexEntity pokedex;

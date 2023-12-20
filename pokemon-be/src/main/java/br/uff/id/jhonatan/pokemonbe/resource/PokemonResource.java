@@ -7,6 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -33,6 +34,11 @@ public class PokemonResource {
 
 	@PostMapping
 	public ResponseEntity<PokemonEntity> save(@RequestBody PokemonEntity regiao){
-		return new ResponseEntity<>(pokemonService.save(regiao), HttpStatus.CREATED);
+		return new ResponseEntity<>(pokemonService.saveOrUpdate(regiao), HttpStatus.CREATED);
+	}
+	
+	@PutMapping
+	public ResponseEntity<PokemonEntity> update(@RequestBody PokemonEntity regiao){
+		return new ResponseEntity<>(pokemonService.saveOrUpdate(regiao), HttpStatus.CREATED);
 	}
 }

@@ -7,6 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -33,6 +34,12 @@ public class PokedexResource {
 
 	@PostMapping
 	public ResponseEntity<PokedexEntity> save(@RequestBody PokedexEntity pokedex) {
-		return new ResponseEntity<>(pokedexService.save(pokedex), HttpStatus.CREATED);
+		return new ResponseEntity<>(pokedexService.saveOrUpdate(pokedex), HttpStatus.CREATED);
 	}
+
+	@PutMapping
+	public ResponseEntity<PokedexEntity> update(@RequestBody PokedexEntity pokedex) {
+		return new ResponseEntity<>(pokedexService.saveOrUpdate(pokedex), HttpStatus.CREATED);
+	}
+
 }
