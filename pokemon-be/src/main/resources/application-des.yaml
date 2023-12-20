@@ -1,0 +1,7 @@
+# des.yaml
+
+postgresql:
+  enabled: true
+  postgresqlPassword: 1996
+  postgresqlDatabase: postgres
+  postgresqlUsername: postgres

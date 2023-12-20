@@ -1,0 +1,14 @@
+# application.yaml
+
+spring:
+  profiles:
+    active: des
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: 1996
+  jpa:
+    open-in-view: true
+
+    hibernate:
+      ddl-auto: update
