@@ -3,6 +3,8 @@ package br.uff.id.jhonatan.pokemonbe.entities;
 import java.io.Serializable;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -33,6 +35,7 @@ public class PokedexEntity implements Serializable {
 	@Column(name = "POKEDEX_ID")
 	private Long id;
 	private String descricao;
+	@JsonIgnore
 	@OneToMany(mappedBy = "pokedex")
 	private List<PokemonEntity> pokemon;
 
