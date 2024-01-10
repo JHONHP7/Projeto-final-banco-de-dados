@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.uff.id.jhonatan.pokemonbe.entities.MoveEntity;
 import br.uff.id.jhonatan.pokemonbe.entities.TipoPokemonEntity;
 import br.uff.id.jhonatan.pokemonbe.service.TipoPokemonService;
 import br.uff.id.jhonatan.pokemonbe.util.DateUtil;

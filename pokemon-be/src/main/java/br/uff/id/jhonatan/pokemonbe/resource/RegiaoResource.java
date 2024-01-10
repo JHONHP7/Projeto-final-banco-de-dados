@@ -2,7 +2,6 @@ package br.uff.id.jhonatan.pokemonbe.resource;
 
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Map;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
