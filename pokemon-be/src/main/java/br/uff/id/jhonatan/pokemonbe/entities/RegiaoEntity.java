@@ -26,11 +26,11 @@ public class RegiaoEntity implements Serializable {
 	/**
 	 * 
 	 */
+	private static final long serialVersionUID = -292596498697441949L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "REGIAO_ID")
 	private Long id;
-	private static final long serialVersionUID = 6520877088520170802L;
 	private String Name;
 	private String descricao;
 

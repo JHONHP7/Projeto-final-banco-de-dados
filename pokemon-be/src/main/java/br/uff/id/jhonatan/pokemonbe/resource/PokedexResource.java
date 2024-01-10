@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.uff.id.jhonatan.pokemonbe.entities.PokedexEntity;
+import br.uff.id.jhonatan.pokemonbe.entities.PokemonEntity;
 import br.uff.id.jhonatan.pokemonbe.service.PokedexService;
 import br.uff.id.jhonatan.pokemonbe.util.DateUtil;
 import lombok.RequiredArgsConstructor;
@@ -40,6 +42,12 @@ public class PokedexResource {
 	@PutMapping
 	public ResponseEntity<PokedexEntity> update(@RequestBody PokedexEntity pokedex) {
 		return new ResponseEntity<>(pokedexService.saveOrUpdate(pokedex), HttpStatus.CREATED);
+	}
+
+	@DeleteMapping
+	public ResponseEntity<Void> delete(@RequestBody PokedexEntity entity) {
+		pokedexService.delete(entity);
+		return new ResponseEntity<>(HttpStatus.OK);
 	}
 
 }

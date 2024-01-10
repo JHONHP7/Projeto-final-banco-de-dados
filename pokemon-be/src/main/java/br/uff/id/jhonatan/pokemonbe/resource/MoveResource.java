@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -40,6 +41,12 @@ public class MoveResource {
 	@PutMapping
 	public ResponseEntity<MoveEntity> update(@RequestBody MoveEntity move) {
 		return new ResponseEntity<>(moveService.saveOrUpdate(move), HttpStatus.CREATED);
+	}
+	
+	@DeleteMapping
+	public ResponseEntity<Void> delete(@RequestBody MoveEntity move){
+		moveService.delete(move);
+		return ResponseEntity.noContent().build();
 	}
 
 }

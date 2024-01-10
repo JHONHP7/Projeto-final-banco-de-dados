@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -40,6 +41,12 @@ public class TipoPokemonResource {
 	@PutMapping
 	public ResponseEntity<TipoPokemonEntity> update(@RequestBody TipoPokemonEntity tipo) {
 		return new ResponseEntity<>(tipoPokemonService.saveOrUpdate(tipo), HttpStatus.CREATED);
+	}
+
+	@DeleteMapping
+	public ResponseEntity<Void> delete(@RequestBody TipoPokemonEntity tipoPokemon) {
+		tipoPokemonService.delete(tipoPokemon);
+		return ResponseEntity.noContent().build();
 	}
 
 }

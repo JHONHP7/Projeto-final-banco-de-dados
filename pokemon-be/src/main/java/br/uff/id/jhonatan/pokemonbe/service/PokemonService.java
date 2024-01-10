@@ -31,13 +31,13 @@ public class PokemonService {
 			return pokemonRepository.save(pokemon);
 		}
 	}
-	
+
 	public PokemonEntity findById(Long id) {
 		return pokemonRepository.findById(id).orElseThrow();
 	}
 
-	public void delete(PokemonEntity pokemon) {
-		pokemonRepository.delete(findById(pokemon.getId()));
+	public void delete(PokemonEntity entity) {
+		pokemonRepository.delete(findById(entity.getId()));
 	}
 
 }

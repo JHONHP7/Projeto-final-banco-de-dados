@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import br.uff.id.jhonatan.pokemonbe.entities.MoveEntity;
 import br.uff.id.jhonatan.pokemonbe.entities.TipoPokemonEntity;
 import br.uff.id.jhonatan.pokemonbe.repositories.TipoPokemonRepository;
 import jakarta.persistence.EntityNotFoundException;
@@ -37,8 +36,8 @@ public class TipoPokemonService {
 		return tipoPokemonRepository.findById(id).orElseThrow();
 	}
 
-	public void delete(MoveEntity move) {
-		tipoPokemonRepository.delete(findById(move.getId()));
+	public void delete(TipoPokemonEntity entity) {
+		tipoPokemonRepository.delete(findById(entity.getId()));
 	}
 
 }
